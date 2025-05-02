@@ -1,0 +1,98 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+ generate a modern, persuasive, and SEO-optimized webpage for Atlas Infectious Disease Practice’s USCIS-approved Immigration Medical Exam (Form I-693) service in Palm Beach County. The prompt bakes in proven on-page SEO tactics (target keywords, metadata, headings, schema, FAQs, internal-link cues), highlights your on-site labs + vaccines and competitive pricing, and positions your board-certified civil surgeon as the trusted local expert.
+
+---
+
+## One-Paragraph Summary
+
+USCIS now rejects adjustment-of-status filings that do **not** include a sealed Form I-693, making a timely, compliant immigration physical essential for Green Card applicants — and civil surgeons must record age-appropriate vaccines per CDC technical instructions.citeturn0search2turn0news69turn0search0turn0search9 By emphasizing that AIDP’s Palm Beach facility offers same-day labs, in-clinic vaccines, rapid turnaround (typically 1-2 hours)citeturn0search8 and transparent, competitive pricing (nearby clinics advertise $190–$250)citeturn0search4turn0search5, the webpage can rank for high-intent searches like “immigration medical exam near me,” attract local traffic, and convert visitors into booked appointments.
+
+---
+
+## Primary SEO Objectives & Target Keywords
+
+| Purpose | High-Intent Keywords |
+|---------|----------------------|
+| Core service | immigration medical exam Palm Beach County, USCIS civil surgeon West Palm Beach, Form I-693 doctor |
+| Feature highlights | on-site labs for I-693, same-day immigration vaccines, affordable Green Card medical exam |
+| Local signals | immigration doctor near Wellington, Boynton Beach civil surgeon, Jupiter FL Green Card physical |
+
+Include variants and long-tails naturally in H1-H3 tags and body copy; sprinkle geo-modifiers (zip codes, neighborhoods) to boost Local Pack visibility.citeturn0search1
+
+---
+
+## Copy-and-Paste Prompt for ChatGPT (replace brackets where noted)
+
+```text
+You are an expert medical copywriter and SEO strategist.
+
+**Goal:** Draft the full webpage copy (≈800–1 000 words) for Atlas Infectious Disease Practice, PLLC (AIDP) promoting its USCIS-approved immigration medical exam (Form I-693) service. The page must persuade Green Card applicants in Palm Beach County to book an appointment.
+
+### Brand Details
+- Practice: Atlas Infectious Disease Practice, PLLC (AIDP)
+- Address: [insert street, city, FL, ZIP]
+- Civil Surgeon: Board-certified infectious disease physician, USCIS-designated
+- Unique value: Labs & all required vaccines on-site; sealed I-693 delivered in 3–5 business days; bilingual staff (English-Spanish-Creole); transparent flat pricing with no hidden fees; weekend & same-day appointments.
+- Service area: West Palm Beach, Boynton Beach, Wellington, Palm Beach Gardens, Jupiter, Royal Palm Beach.
+
+### SEO Requirements
+1. **Meta Title (≤60 chars):** Must include “Immigration Medical Exam Palm Beach | USCIS Civil Surgeon”.
+2. **Meta Description (≤160 chars):** Stress convenience, on-site labs/vaccines, competitive price, and quick turnaround.
+3. **URL Slug:** /immigration-medical-exam-palm-beach
+4. **H1:** Clear, keyword-rich (e.g., “Immigration Medical Exam in Palm Beach County – USCIS Civil Surgeon”).
+5. Use H2/H3 sections for:
+   - Why a Form I-693 exam is required (cite USCIS rules).
+   - What to expect at AIDP (step-by-step visit, labs, vaccines).
+   - Pricing & what’s included (list flat fee, labs, vaccines).
+   - Required documents and how to prepare (photo ID, vaccination records).
+   - Timeline & next steps (same-day labs, envelope sealing, delivery).
+   - FAQs (at least 5 Q&As drawn from USCIS and CDC guidance).
+6. **Keyword Integration:** Naturally weave the following phrases 3–5× each: “immigration medical exam Palm Beach”, “USCIS civil surgeon”, “Form I-693”, “on-site labs and vaccines”, “competitive price”.
+7. **Local SEO Elements:** Mention nearby landmarks (e.g., Palm Beach International Airport), ZIP codes, and driving directions. Embed Google Map iframe placeholder.
+8. **Calls-to-Action:** Multiple CTAs (“Schedule Your I-693 Exam Today” button) with phone + online booking link.
+9. **Schema Markup:** Output JSON-LD “LocalBusiness” schema with service name “Immigration Medical Exam”.
+10. **Accessibility & Trust:** Use clear language (8th-grade reading), bulleted lists, trust badges (USCIS logo, board-certified), and patient testimonials.
+
+### Tone & Style
+- Professional, reassuring, patient-centric.
+- Emphasize speed, compliance, and convenience.
+- Avoid jargon; explain medical terms clearly.
+
+### Deliverables
+1. Meta title & description
+2. Full HTML-ready body copy with H-tags, CTA buttons (as <a> or <button> placeholders)
+3. FAQ section (schema-ready)
+4. LocalBusiness JSON-LD block
+5. Alt-text suggestions for images (e.g., “Civil surgeon administering required vaccines for Form I-693 in Palm Beach clinic”)
+
+Cite authoritative sources inline where relevant (USCIS, CDC). End with a strong final CTA.
+```
+
+---
+
+## Additional Implementation Tips
+
+### Visual & UX Ideas
+* **Hero Banner:** Friendly photo of your civil surgeon with a patient, overlay headline “Fast, Affordable Immigration Medical Exams in Palm Beach”. Use a prominent “Book Now” button. High-quality imagery drives trust and engagement.citeturn0search7  
+* **Process Icons:** Three-step graphic (Book ▶ Exam & Labs ▶ Receive Sealed I-693). Quick-scan visuals reduce bounce rates.  
+* **Pricing Card:** Transparent flat-fee box compared to average South Florida rates ($190 – $250) to highlight value.citeturn0search4turn0search5  
+
+### Content Enhancements
+* Include a short video explainer describing what to bring and how vaccines are administered on-site; video can boost time-on-page and rankings.  
+* Add a downloadable preparation checklist PDF for prospective patients (gated or ungated to capture email leads).  
+* Incorporate recent USCIS update (Dec 2 2024) that requires the I-693 be submitted with the I-485 to emphasize urgency.citeturn0news69  
+
+### Technical SEO Must-Dos
+* Compress images (WebP), enable lazy-loading.  
+* Ensure mobile Core Web Vitals (LCP < 2.5 s, CLS < 0.1).  
+* Build internal links to: “Travel Vaccines”, “Hepatitis B Testing”, and “About Dr. [Name]” pages.  
+* List your clinic on Google Business Profile with “USCIS Civil Surgeon” primary category to strengthen local relevance.citeturn0search1  
+
+---
+
+
+Implementing the above prompt (and accompanying tips) will give AIDP a high-converting, search-optimized Immigration Services page that outranks local competitors, showcases your on-site labs and vaccines, and drives more Form I-693 bookings throughout Palm Beach County.
