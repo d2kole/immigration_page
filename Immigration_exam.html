@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fast, affordable Immigration Medical Exam Palm Beach County. USCIS civil surgeon with on-site labs & vaccines, sealed Form I-693 in 3–5 days, competitive price.">
+    <meta name="theme-color" content="#2E8B57">
     <title>Immigration Medical Exam Palm Beach | USCIS Civil Surgeon</title>
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://atlasidp.com">
+    
+    <!-- Critical CSS inline for better performance -->
+    <style>
+      /* Critical CSS for above-the-fold content */
+      :root{--primary-color:#2E8B57;--secondary-color:#4682B4;--light-color:#f8f9fa;--dark-color:#343a40;--text-color:#333;--border-radius:5px;--box-shadow:0 2px 15px rgba(0,0,0,0.1);--transition:all 0.3s ease}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.6;color:var(--text-color);background-color:#fff}header{background-color:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.1);position:sticky;top:0;z-index:1000}.hero{background-image:url('smiling-female-hero.webp');background-size:cover;background-position:center;background-repeat:no-repeat;height:600px;position:relative;color:white;display:flex;align-items:center;text-align:center}.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5)}.hero-content{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:0 20px}
+    </style>
+    
     <link rel="stylesheet" href="imm_exam.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Atlas IDP Immigration">
+    <link rel="apple-touch-icon" href="logo.AtlasPride.png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_TRACKING_ID', {
+        page_title: 'Immigration Medical Exam Palm Beach',
+        custom_map: {'custom_parameter_1': 'custom_parameter_value'}
+      });
+      
+      // Track important user interactions
+      gtag('event', 'page_view', {
+        page_title: 'Immigration Medical Exam Landing Page',
+        page_location: window.location.href
+      });
+    </script>
     <!-- SEO Meta Tags -->
     <meta name="keywords" content="Immigration medical exam Palm Beach County, USCIS civil surgeon Atlantis FL, Form I-693 doctor, Green Card medical exam, Dr. Joseph Etienne, on-site labs and vaccines, multilingual immigration doctor">
     <meta name="author" content="Atlas Infectious Disease Practice">
@@ -43,7 +84,9 @@
         "addressCountry": "US"
       },
       "geo": {
-        "@type": "GeoCoordinates"
+        "@type": "GeoCoordinates",
+        "latitude": "26.59244497792745",
+        "longitude": "-80.09127492394626"
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -61,75 +104,114 @@
         "https://www.facebook.com/atlasidp"
       ],
       "priceRange": "$250-$450",
-      "servesCuisine": "Immigration Medical Exams, Form I-693, USCIS Civil Surgeon"
+      "medicalSpecialty": "Infectious Disease Medicine",
+      "availableService": [
+        {
+          "@type": "MedicalProcedure", 
+          "name": "Immigration Medical Examination",
+          "alternateName": "Form I-693 Medical Exam",
+          "description": "USCIS-required medical examination for Green Card and Adjustment of Status applicants"
+        },
+        {
+          "@type": "MedicalTest",
+          "name": "Tuberculosis Screening", 
+          "description": "TB testing as required by USCIS immigration medical examination"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Immigration Vaccination Services",
+          "description": "Age-appropriate vaccinations per CDC Technical Instructions for immigration"
+        }
+      ],
+      "founder": {
+        "@type": "Physician",
+        "name": "Dr. Joseph Etienne",
+        "jobTitle": "USCIS-Approved Civil Surgeon",
+        "hasCredential": "MD FACP"
+      },
+      "acceptedPaymentMethod": ["Cash", "Credit Card", "Insurance"],
+      "areaServed": ["Palm Beach County", "West Palm Beach", "Boynton Beach", "Wellington", "Atlantis"]
     }
     </script>
 </head>
 <body>
+    <!-- Skip Links for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-menu" class="skip-link">Skip to navigation</a>
+    <a href="#booking-form" class="skip-link">Skip to booking form</a>
+    
     <!-- Header Section -->
-    <header>
+    <header role="banner">
         <div class="top-bar">
             <div class="container">
-                <div class="contact-info">
-                    <a href="https://maps.google.com/?q=5401+South+Congress+Avenue+Suite+201+Atlantis+FL+33462" target="_blank">
-                        <i class="fas fa-map-marker-alt"></i> 5401 S. Congress Ave, Ste 201 Atlantis, FL 33462
+                <div class="contact-info" role="contentinfo" aria-label="Contact information">
+                    <a href="https://maps.google.com/?q=5401+South+Congress+Avenue+Suite+201+Atlantis+FL+33462" target="_blank" rel="noopener" aria-label="View address on Google Maps">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i> 5401 S. Congress Ave, Ste 201 Atlantis, FL 33462
                     </a>
-                    <a href="tel:5619956971">
-                        <i class="fas fa-phone"></i> (561)995-6971
+                    <a href="tel:5619956971" aria-label="Call office phone">
+                        <i class="fas fa-phone" aria-hidden="true"></i> (561)995-6971
                     </a>
-                    <a href="tel:5615698309">
-                        <i class="fas fa-fax"></i> (561)569-8309
+                    <a href="tel:5615698309" aria-label="Call office fax">
+                        <i class="fas fa-fax" aria-hidden="true"></i> (561)569-8309
                     </a>
                 </div>
                 <div class="top-actions">
                     <img src="logo.AtlasPride.png" alt="Atlas Infectious Disease Practice Logo" class="top-logo">
-                    <a href="#" class="pay-bills-btn">Pay Bills</a>
-                    <a href="https://www.facebook.com/atlasidp" class="social-icon" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
+                    <a href="#" class="pay-bills-btn" aria-label="Pay bills online">Pay Bills</a>
+                    <a href="https://www.facebook.com/atlasidp" class="social-icon" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
                     </a>
                 </div>
             </div>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <div class="container">
                 <div class="logo">
-                    <a href="https://atlasidp.com">
+                    <a href="https://atlasidp.com" aria-label="Atlas Infectious Disease Practice homepage">
                         <img src="https://atlasidp.com/wp-content/uploads/2023/03/aidp-logo.png" alt="Atlas Infectious Disease Practice Logo">
                     </a>
                 </div>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="https://atlasidp.com">Home</a></li>
-                    <li><a href="https://atlasidp.com/meet-the-team/">Meet The Team</a></li>
-                    <li><a href="https://atlasidp.com/conditions-we-treat/">Conditions We Treat</a></li>
-                    <li><a href="https://atlasidp.com/services/">Services</a></li>
-                    <li><a href="https://atlasidp.com/resources/">Resources</a></li>
-                    <li><a href="https://atlasidp.com/contact-us/">Contact Us</a></li>
-                    <li><a href="#" class="login-btn">Login / Signup</a></li>
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                    <span class="sr-only">Menu</span>
+                </button>
+                <ul class="nav-menu" id="main-menu" role="menubar">
+                    <li role="none"><a href="https://atlasidp.com" role="menuitem">Home</a></li>
+                    <li role="none"><a href="https://atlasidp.com/meet-the-team/" role="menuitem">Meet The Team</a></li>
+                    <li role="none"><a href="https://atlasidp.com/conditions-we-treat/" role="menuitem">Conditions We Treat</a></li>
+                    <li role="none"><a href="https://atlasidp.com/services/" role="menuitem">Services</a></li>
+                    <li role="none"><a href="https://atlasidp.com/resources/" role="menuitem">Resources</a></li>
+                    <li role="none"><a href="https://atlasidp.com/contact-us/" role="menuitem">Contact Us</a></li>
+                    <li role="none"><a href="#" class="login-btn" role="menuitem">Login / Signup</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" role="banner" aria-labelledby="hero-title">
         <div class="hero-content">
-            <h1>Immigration Medical Exam in Palm Beach County – USCIS Civil Surgeon</h1>
+            <h1 id="hero-title">Immigration Medical Exam in Palm Beach County – USCIS Civil Surgeon</h1>
             <h2>USCIS-Approved Civil Surgeon Dr. Joseph Etienne MD FACP</h2>
             <p>Complete Form I-693 Medical Exams with On-Site Labs and Vaccines at Competitive Prices</p>
-            <div class="language-support">
-                <span><i class="fas fa-globe"></i> Services available in:</span>
+            <div class="language-support" role="complementary" aria-label="Languages offered">
+                <span><i class="fas fa-globe" aria-hidden="true"></i> Services available in:</span>
                 <span class="language">English</span>
                 <span class="language">Spanish</span>
                 <span class="language">Haitian Creole</span>
                 <span class="language">French</span>
             </div>
-            <a href="#appointment" class="cta-button">Get Everything Done in One Visit — Book Now for On-Site Labs + Vaccines!</a>
+            <a href="#appointment" class="cta-button" aria-describedby="cta-description">
+                Get Everything Done in One Visit — Book Now for On-Site Labs + Vaccines!
+            </a>
+            <div id="cta-description" class="sr-only">Book appointment for immigration medical exam with on-site laboratory tests and vaccinations</div>
         </div>
     </section>
 
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        
     <!-- Why Required Section -->
     <section class="why-required">
         <div class="container">
@@ -313,62 +395,130 @@
         </div>
     </section>
 
+    <!-- Appointment Booking Form Section -->
+    <section class="appointment-form" id="booking-form">
+        <div class="container">
+            <h2>Schedule Your Immigration Medical Exam</h2>
+            <p>Book your appointment online or call us at (561) 995-6971</p>
+            <form class="booking-form" action="#" method="post" novalidate aria-labelledby="booking-form-title">
+                <h3 id="booking-form-title" class="sr-only">Appointment booking form</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required aria-describedby="firstName-error">
+                        <div id="firstName-error" class="error-message" role="alert" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required aria-describedby="lastName-error">
+                        <div id="lastName-error" class="error-message" role="alert" aria-live="polite"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error email-hint">
+                        <div id="email-hint" class="form-hint">We'll send appointment confirmation to this email</div>
+                        <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required aria-describedby="phone-error">
+                        <div id="phone-error" class="error-message" role="alert" aria-live="polite"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="examType">Exam Type *</label>
+                        <select id="examType" name="examType" required aria-describedby="examType-error">
+                            <option value="">Select exam type</option>
+                            <option value="i693">Form I-693 (Green Card)</option>
+                            <option value="naturalization">Naturalization</option>
+                            <option value="other">Other Immigration Exam</option>
+                        </select>
+                        <div id="examType-error" class="error-message" role="alert" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredDate">Preferred Date *</label>
+                        <input type="date" id="preferredDate" name="preferredDate" required aria-describedby="preferredDate-error">
+                        <div id="preferredDate-error" class="error-message" role="alert" aria-live="polite"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Please share any specific medical concerns, vaccination history, or questions about your exam" aria-describedby="message-hint"></textarea>
+                    <div id="message-hint" class="form-hint">Optional: Any relevant medical history or questions</div>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+                        <span class="checkmark"></span>
+                        I consent to be contacted by Atlas Infectious Disease Practice regarding my appointment *
+                    </label>
+                    <div id="consent-error" class="error-message" role="alert" aria-live="polite"></div>
+                </div>
+                <button type="submit" class="submit-btn">Schedule Appointment</button>
+                <p class="form-note">* Required fields. We'll contact you within 24 hours to confirm your appointment.</p>
+            </form>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
-            <div class="faq-container">
+            <div class="faq-container" role="group" aria-label="Frequently asked questions about immigration medical exams">
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
                         <h3>How long does the immigration medical exam take?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
+                        <span class="faq-toggle"><i class="fas fa-plus" aria-hidden="true"></i></span>
+                    </button>
+                    <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-question-1">
                         <p>The typical examination takes approximately 1-2 hours, depending on your medical history and vaccination needs. All laboratory tests are performed on-site, which helps streamline the process.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
                         <h3>How soon will I receive my sealed Form I-693?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
+                        <span class="faq-toggle"><i class="fas fa-plus" aria-hidden="true"></i></span>
+                    </button>
+                    <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-question-2">
                         <p>In most cases, if all required tests and vaccinations are completed during your visit, we can provide your sealed Form I-693 within 3-5 business days. Some tests may require additional time for results.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
                         <h3>What vaccines are required for the immigration medical exam?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
+                        <span class="faq-toggle"><i class="fas fa-plus" aria-hidden="true"></i></span>
+                    </button>
+                    <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-question-3">
                         <p>The required vaccines typically include: MMR (measles, mumps, rubella), Tdap (tetanus, diphtheria, pertussis), Varicella (chickenpox), Polio, Influenza (seasonal), Pneumococcal, Hepatitis A, Hepatitis B, Meningococcal, and Haemophilus influenzae type B. The specific vaccines required depend on your age, medical history, and previous vaccinations.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
                         <h3>Do I need to fast before the exam?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
+                        <span class="faq-toggle"><i class="fas fa-plus" aria-hidden="true"></i></span>
+                    </button>
+                    <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-question-4">
                         <p>Fasting is not typically required for the standard immigration medical exam. However, if additional tests are needed based on your medical history, fasting may be recommended. Our staff will provide specific instructions when you schedule your appointment.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
                         <h3>How long is the Form I-693 valid?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
+                        <span class="faq-toggle"><i class="fas fa-plus" aria-hidden="true"></i></span>
+                    </button>
+                    <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-question-5">
                         <p>According to USCIS guidelines, Form I-693 is valid for 2 years from the date the civil surgeon signs it. However, it's recommended to file it with USCIS within 60 days of the civil surgeon's signature for optimal processing.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
                         <h3>Can I bring an interpreter to my appointment?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
+                        <span class="faq-toggle"><i class="fas fa-plus" aria-hidden="true"></i></span>
+                    </button>
+                    <div class="faq-answer" id="faq-6" role="region" aria-labelledby="faq-question-6">
                         <p>Yes, you may bring an interpreter if needed. However, our staff speaks English, Spanish, Haitian Creole, and French, so we can accommodate most patients without the need for an external interpreter.</p>
                     </div>
                 </div>
@@ -420,9 +570,12 @@
             </div>
         </div>
     </section>
+    
+    </main>
+    <!-- End Main Content -->
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
@@ -472,54 +625,279 @@
     </footer>
 
     <script>
-        // Mobile Menu Toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
+        // Modern JavaScript with ES6+ features and better error handling
+        class AtlasIdpWebsite {
+          constructor() {
+            this.currentSlide = 0;
+            this.testimonials = document.querySelectorAll('.testimonial');
+            this.init();
+          }
 
-        // FAQ Toggle
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentNode;
-                const answer = question.nextElementSibling;
-                const icon = question.querySelector('.faq-toggle i');
-                
-                // Toggle current item
-                item.classList.toggle('active');
-                
-                // Toggle icon
-                if (item.classList.contains('active')) {
-                    icon.classList.remove('fa-plus');
-                    icon.classList.add('fa-minus');
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                } else {
-                    icon.classList.remove('fa-minus');
-                    icon.classList.add('fa-plus');
-                    answer.style.maxHeight = '0';
+          async init() {
+            try {
+              this.setupEventListeners();
+              this.initializeTestimonialSlider();
+              await this.registerServiceWorker();
+              this.setupFormValidation();
+            } catch (error) {
+              console.error('Initialization error:', error);
+            }
+          }
+
+          setupEventListeners() {
+            // Mobile menu toggle with improved accessibility
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (menuToggle && navMenu) {
+              menuToggle.addEventListener('click', () => {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+              });
+            }
+
+            // Enhanced FAQ toggle with proper ARIA states
+            document.querySelectorAll('.faq-question').forEach(question => {
+              question.addEventListener('click', () => this.toggleFaq(question));
+            });
+
+            // Keyboard navigation for FAQ
+            document.querySelectorAll('.faq-question').forEach(question => {
+              question.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  this.toggleFaq(question);
                 }
+              });
             });
-        });
+          }
 
-        // Simple testimonial slider
-        let currentSlide = 0;
-        const testimonials = document.querySelectorAll('.testimonial');
-        
-        function showSlide(index) {
-            testimonials.forEach((testimonial, i) => {
-                testimonial.style.display = i === index ? 'block' : 'none';
+          toggleFaq(question) {
+            const item = question.parentNode;
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector('.faq-toggle i');
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+            
+            // Update ARIA state
+            question.setAttribute('aria-expanded', !isExpanded);
+            
+            // Toggle visual state
+            item.classList.toggle('active');
+            
+            if (!isExpanded) {
+              icon.classList.remove('fa-plus');
+              icon.classList.add('fa-minus');
+              answer.style.maxHeight = answer.scrollHeight + 'px';
+            } else {
+              icon.classList.remove('fa-minus');
+              icon.classList.add('fa-plus');
+              answer.style.maxHeight = '0';
+            }
+          }
+
+          initializeTestimonialSlider() {
+            if (this.testimonials.length === 0) return;
+            
+            this.showSlide(this.currentSlide);
+            setInterval(() => this.nextSlide(), 5000);
+          }
+
+          showSlide(index) {
+            this.testimonials.forEach((testimonial, i) => {
+              testimonial.style.display = i === index ? 'block' : 'none';
             });
+          }
+          
+          nextSlide() {
+            this.currentSlide = (this.currentSlide + 1) % this.testimonials.length;
+            this.showSlide(this.currentSlide);
+          }
+
+          async registerServiceWorker() {
+            if ('serviceWorker' in navigator) {
+              try {
+                const registration = await navigator.serviceWorker.register('/sw.js');
+                console.log('Service Worker registered successfully:', registration);
+                
+                // Check for updates
+                registration.addEventListener('updatefound', () => {
+                  console.log('Service Worker update found');
+                });
+              } catch (error) {
+                console.error('Service Worker registration failed:', error);
+              }
+            }
+          }
+
+          setupFormValidation() {
+            const form = document.querySelector('.booking-form');
+            if (!form) return;
+
+            form.addEventListener('submit', (e) => this.handleFormSubmit(e));
+            
+            // Real-time validation
+            const inputs = form.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+              input.addEventListener('blur', () => this.validateField(input));
+              input.addEventListener('input', () => this.clearFieldError(input));
+            });
+          }
+
+          validateField(field) {
+            const errorElement = document.getElementById(field.name + '-error');
+            if (!errorElement) return;
+
+            let isValid = true;
+            let errorMessage = '';
+
+            // Required field validation
+            if (field.hasAttribute('required') && !field.value.trim()) {
+              isValid = false;
+              errorMessage = 'This field is required.';
+            }
+
+            // Email validation
+            if (field.type === 'email' && field.value) {
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailRegex.test(field.value)) {
+                isValid = false;
+                errorMessage = 'Please enter a valid email address.';
+              }
+            }
+
+            // Phone validation
+            if (field.type === 'tel' && field.value) {
+              const phoneRegex = /^[\+]?[\s\.\-\(\)]*([0-9][\s\.\-\(\)]*){10,}$/;
+              if (!phoneRegex.test(field.value)) {
+                isValid = false;
+                errorMessage = 'Please enter a valid phone number.';
+              }
+            }
+
+            // Date validation
+            if (field.type === 'date' && field.value) {
+              const selectedDate = new Date(field.value);
+              const today = new Date();
+              today.setHours(0, 0, 0, 0);
+              
+              if (selectedDate < today) {
+                isValid = false;
+                errorMessage = 'Please select a future date.';
+              }
+            }
+
+            // Update UI
+            if (isValid) {
+              field.classList.remove('error');
+              errorElement.textContent = '';
+            } else {
+              field.classList.add('error');
+              errorElement.textContent = errorMessage;
+            }
+
+            return isValid;
+          }
+
+          clearFieldError(field) {
+            const errorElement = document.getElementById(field.name + '-error');
+            if (errorElement) {
+              errorElement.textContent = '';
+              field.classList.remove('error');
+            }
+          }
+
+          handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const formData = new FormData(form);
+            let isFormValid = true;
+
+            // Validate all fields
+            const inputs = form.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+              if (!this.validateField(input)) {
+                isFormValid = false;
+              }
+            });
+
+            if (isFormValid) {
+              this.submitForm(formData);
+            } else {
+              // Focus first error field
+              const firstError = form.querySelector('.error');
+              if (firstError) {
+                firstError.focus();
+              }
+            }
+          }
+
+          async submitForm(formData) {
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            try {
+              submitBtn.disabled = true;
+              submitBtn.textContent = 'Submitting...';
+
+              // In a real application, you would submit to your server
+              // For now, we'll simulate the submission
+              await this.simulateFormSubmission(formData);
+              
+              this.showSuccessMessage();
+              document.querySelector('.booking-form').reset();
+              
+            } catch (error) {
+              console.error('Form submission error:', error);
+              this.showErrorMessage('There was an error submitting your form. Please try again.');
+            } finally {
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalText;
+            }
+          }
+
+          async simulateFormSubmission(formData) {
+            // Simulate network delay
+            return new Promise((resolve) => {
+              setTimeout(() => {
+                console.log('Form data:', Object.fromEntries(formData));
+                resolve();
+              }, 1000);
+            });
+          }
+
+          showSuccessMessage() {
+            const message = document.createElement('div');
+            message.className = 'alert alert-success';
+            message.textContent = 'Thank you! Your appointment request has been submitted. We\'ll contact you within 24 hours to confirm.';
+            message.setAttribute('role', 'alert');
+            
+            const form = document.querySelector('.booking-form');
+            form.insertBefore(message, form.firstChild);
+            
+            setTimeout(() => message.remove(), 5000);
+          }
+
+          showErrorMessage(text) {
+            const message = document.createElement('div');
+            message.className = 'alert alert-error';
+            message.textContent = text;
+            message.setAttribute('role', 'alert');
+            
+            const form = document.querySelector('.booking-form');
+            form.insertBefore(message, form.firstChild);
+            
+            setTimeout(() => message.remove(), 5000);
+          }
         }
-        
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % testimonials.length;
-            showSlide(currentSlide);
+
+        // Initialize when DOM is loaded
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', () => new AtlasIdpWebsite());
+        } else {
+          new AtlasIdpWebsite();
         }
-        
-        // Initialize slider
-        showSlide(currentSlide);
-        
-        // Auto-advance slides every 5 seconds
-        setInterval(nextSlide, 5000);
     </script>
 </body>
 </html>
