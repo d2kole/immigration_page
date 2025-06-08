@@ -1,40 +1,44 @@
 name: Claude Code
 
 on:
-  issues:
-    types: [opened, edited]
   issue_comment:
-    types: [created, edited]
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  issues:
+    types: [opened, assigned]
+  pull_request_review:
+    types: [submitted]
+  # Add support for PR events to catch @claude mentions in PR descriptions
   pull_request:
     types: [opened, edited]
-  pull_request_review_comment:
-    types: [created, edited]
 
 jobs:
   claude:
+    if: |
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude')) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude'))) ||
+      (github.event_name == 'pull_request' && contains(github.event.pull_request.body, '@claude'))
     runs-on: ubuntu-latest
-    if: >-
-      contains(github.event.comment.body, '@claude') || 
-      contains(github.event.issue.body, '@claude') || 
-      contains(github.event.pull_request.body, '@claude') ||
-      contains(github.event.comment.body, '/claude') || 
-      contains(github.event.issue.body, '/claude') || 
-      contains(github.event.pull_request.body, '/claude')
     permissions:
-      contents: write
-      issues: write
-      pull-requests: write
+      contents: write  # Changed from 'read' to 'write' so Claude can make changes
+      pull-requests: write  # Changed from 'read' to 'write' so Claude can create/update PRs
+      issues: write  # Changed from 'read' to 'write' so Claude can respond to issues
+      id-token: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # Changed from 1 to 0 for full history access
       
       - name: Run Claude Code
+        id: claude
         uses: anthropics/claude-code-action@beta
         with:
-          # Use default behavior - respond to @claude mentions
-          # Optional: Set the model to use
-          # model: "claude-3-5-sonnet-20241022"
-        env:
-          # This uses the ANTHROPIC_API_KEY secret you set
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          allowed_tools: "Bash(bun install),Bash(bun test:*),Bash(bun run format),Bash(bun typecheck),Edit,Replace,View,GlobTool,GrepTool"
+          custom_instructions: "You have been granted tools for editing files and running bun commands (install, run, test, typecheck) for testing your changes: bun install, bun test, bun run format, bun typecheck. Always test your changes before completing tasks."
+          model: "claude-sonnet-4-20250514"  # Updated to the correct model name
+          timeout_minutes: "60"  # Add timeout to prevent long-running jobs
