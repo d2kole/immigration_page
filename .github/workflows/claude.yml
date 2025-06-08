@@ -1,0 +1,40 @@
+name: Claude Code
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
+  pull_request:
+    types: [opened, edited]
+  pull_request_review_comment:
+    types: [created, edited]
+
+jobs:
+  claude:
+    runs-on: ubuntu-latest
+    if: >-
+      contains(github.event.comment.body, '@claude') || 
+      contains(github.event.issue.body, '@claude') || 
+      contains(github.event.pull_request.body, '@claude') ||
+      contains(github.event.comment.body, '/claude') || 
+      contains(github.event.issue.body, '/claude') || 
+      contains(github.event.pull_request.body, '/claude')
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Run Claude Code
+        uses: anthropics/claude-code-action@beta
+        with:
+          # Use default behavior - respond to @claude mentions
+          # Optional: Set the model to use
+          # model: "claude-3-5-sonnet-20241022"
+        env:
+          # This uses the ANTHROPIC_API_KEY secret you set
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
